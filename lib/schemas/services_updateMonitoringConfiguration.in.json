@@ -1,0 +1,27 @@
+{
+    "type": "object",
+    "properties": {
+        "serviceName": {
+            "required": true,
+            "type": "string"
+        },
+        "requestBody": {
+            "description": "The key value pair for properties.",
+            "properties": {
+                "key": {
+                    "description": "The key for the property.",
+                    "type": "string"
+                },
+                "value": {
+                    "description": "The value for the key.",
+                    "type": "string"
+                }
+            },
+            "type": "object"
+        },
+        "api_version": {
+            "required": true,
+            "type": "string"
+        }
+    }
+}

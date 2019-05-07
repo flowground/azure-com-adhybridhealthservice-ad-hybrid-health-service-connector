@@ -1,0 +1,25 @@
+{
+    "type": "object",
+    "properties": {
+        "serviceType": {
+            "required": false,
+            "type": "string"
+        },
+        "skipCount": {
+            "required": false,
+            "type": "integer"
+        },
+        "takeCount": {
+            "required": false,
+            "type": "integer"
+        },
+        "_filter": {
+            "required": false,
+            "type": "string"
+        },
+        "api_version": {
+            "required": true,
+            "type": "string"
+        }
+    }
+}

@@ -1,0 +1,40 @@
+{
+    "type": "object",
+    "properties": {
+        "serviceName": {
+            "required": true,
+            "type": "string"
+        },
+        "metricName": {
+            "required": true,
+            "type": "string"
+        },
+        "groupName": {
+            "required": true,
+            "type": "string"
+        },
+        "serviceMemberId": {
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+        },
+        "groupKey": {
+            "required": false,
+            "type": "string"
+        },
+        "fromDate": {
+            "required": false,
+            "type": "string",
+            "format": "date-time"
+        },
+        "toDate": {
+            "required": false,
+            "type": "string",
+            "format": "date-time"
+        },
+        "api_version": {
+            "required": true,
+            "type": "string"
+        }
+    }
+}

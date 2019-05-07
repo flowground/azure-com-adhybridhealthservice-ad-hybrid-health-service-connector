@@ -1,0 +1,30 @@
+{
+    "type": "object",
+    "properties": {
+        "serviceName": {
+            "required": true,
+            "type": "string"
+        },
+        "featureName": {
+            "required": true,
+            "type": "string"
+        },
+        "requestBody": {
+            "description": " The user preference for a given feature.",
+            "properties": {
+                "metricNames": {
+                    "description": "The name of the metric.",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                }
+            },
+            "type": "object"
+        },
+        "api_version": {
+            "required": true,
+            "type": "string"
+        }
+    }
+}

@@ -1,0 +1,52 @@
+{
+    "type": "object",
+    "properties": {
+        "serviceName": {
+            "required": true,
+            "type": "string"
+        },
+        "requestBody": {
+            "description": "The alert feedback details.",
+            "properties": {
+                "comment": {
+                    "description": "Additional comments related to the alert.",
+                    "type": "string"
+                },
+                "consentedToShare": {
+                    "description": "Indicates if the alert feedback can be shared from product team.",
+                    "type": "boolean"
+                },
+                "createdDate": {
+                    "description": "The date and time,in UTC,when the alert was created.",
+                    "format": "date-time",
+                    "type": "string"
+                },
+                "feedback": {
+                    "description": "The feedback for the alert which indicates if the customer likes or dislikes the alert.",
+                    "type": "string"
+                },
+                "level": {
+                    "description": "The alert level which indicates the severity of the alert.",
+                    "type": "string"
+                },
+                "serviceMemberId": {
+                    "description": "The server Id of the alert.",
+                    "type": "string"
+                },
+                "shortName": {
+                    "description": "The alert short name.",
+                    "type": "string"
+                },
+                "state": {
+                    "description": "The alert state which can be either active or resolved with multiple resolution types.",
+                    "type": "string"
+                }
+            },
+            "type": "object"
+        },
+        "api_version": {
+            "required": true,
+            "type": "string"
+        }
+    }
+}

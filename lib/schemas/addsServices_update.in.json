@@ -1,0 +1,196 @@
+{
+    "type": "object",
+    "properties": {
+        "serviceName": {
+            "required": true,
+            "type": "string"
+        },
+        "requestBody": {
+            "description": "The service properties for a given service.",
+            "properties": {
+                "activeAlerts": {
+                    "description": "The count of alerts that are currently active for the service.",
+                    "type": "integer"
+                },
+                "additionalInformation": {
+                    "description": "The additional information related to the service.",
+                    "type": "string"
+                },
+                "createdDate": {
+                    "description": "The date and time, in UTC, when the service was onboarded to Azure Active Directory Connect Health.",
+                    "format": "date-time",
+                    "type": "string"
+                },
+                "customNotificationEmails": {
+                    "description": "The list of additional emails that are configured to receive notifications about the service.",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "disabled": {
+                    "description": "Indicates if the service is disabled or not.",
+                    "type": "boolean"
+                },
+                "displayName": {
+                    "description": "The display name of the service.",
+                    "type": "string"
+                },
+                "health": {
+                    "description": "The health of the service.",
+                    "type": "string"
+                },
+                "id": {
+                    "description": "The id of the service.",
+                    "type": "string"
+                },
+                "lastDisabled": {
+                    "description": "The date and time, in UTC, when the service was last disabled.",
+                    "format": "date-time",
+                    "type": "string"
+                },
+                "lastUpdated": {
+                    "description": "The date or time , in UTC, when the service properties were last updated.",
+                    "format": "date-time",
+                    "type": "string"
+                },
+                "monitoringConfigurationsComputed": {
+                    "description": "The monitoring configuration of the service which determines what activities are monitored by Azure Active Directory Connect Health.",
+                    "items": {
+                        "description": "The list of key value properties.",
+                        "properties": {
+                            "value": {
+                                "description": "The value returned by the operation.",
+                                "items": {
+                                    "description": "The key value pair for properties.",
+                                    "properties": {
+                                        "key": {
+                                            "description": "The key for the property.",
+                                            "type": "string"
+                                        },
+                                        "value": {
+                                            "description": "The value for the key.",
+                                            "type": "string"
+                                        }
+                                    },
+                                    "type": "object"
+                                },
+                                "type": "array"
+                            }
+                        },
+                        "type": "object"
+                    },
+                    "type": "object"
+                },
+                "monitoringConfigurationsCustomized": {
+                    "description": "The customized monitoring configuration of the service which determines what activities are monitored by Azure Active Directory Connect Health.",
+                    "items": {
+                        "description": "The list of key value properties.",
+                        "properties": {
+                            "value": {
+                                "description": "The value returned by the operation.",
+                                "items": {
+                                    "description": "The key value pair for properties.",
+                                    "properties": {
+                                        "key": {
+                                            "description": "The key for the property.",
+                                            "type": "string"
+                                        },
+                                        "value": {
+                                            "description": "The value for the key.",
+                                            "type": "string"
+                                        }
+                                    },
+                                    "type": "object"
+                                },
+                                "type": "array"
+                            }
+                        },
+                        "type": "object"
+                    },
+                    "type": "object"
+                },
+                "notificationEmailEnabled": {
+                    "description": "Indicates if email notification is enabled or not.",
+                    "type": "boolean"
+                },
+                "notificationEmailEnabledForGlobalAdmins": {
+                    "description": "Indicates if email notification is enabled for global administrators of the tenant.",
+                    "type": "boolean"
+                },
+                "notificationEmails": {
+                    "description": "The list of emails to whom service notifications will be sent.",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "notificationEmailsEnabledForGlobalAdmins": {
+                    "description": "Indicates if email notification is enabled for global administrators of the tenant.",
+                    "type": "boolean"
+                },
+                "originalDisabledState": {
+                    "description": "Gets the original disable state.",
+                    "type": "boolean"
+                },
+                "resolvedAlerts": {
+                    "description": "The total count of alerts that has been resolved for the service.",
+                    "type": "integer"
+                },
+                "serviceId": {
+                    "description": "The id of the service.",
+                    "type": "string"
+                },
+                "serviceName": {
+                    "description": "The name of the service.",
+                    "type": "string"
+                },
+                "signature": {
+                    "description": "The signature of the service.",
+                    "type": "string"
+                },
+                "simpleProperties": {
+                    "description": "List of service specific configuration properties.",
+                    "items": {
+                        "description": "The list of key value properties.",
+                        "properties": {
+                            "value": {
+                                "description": "The value returned by the operation.",
+                                "items": {
+                                    "description": "The key value pair for properties.",
+                                    "properties": {
+                                        "key": {
+                                            "description": "The key for the property.",
+                                            "type": "string"
+                                        },
+                                        "value": {
+                                            "description": "The value for the key.",
+                                            "type": "string"
+                                        }
+                                    },
+                                    "type": "object"
+                                },
+                                "type": "array"
+                            }
+                        },
+                        "type": "object"
+                    },
+                    "type": "object"
+                },
+                "tenantId": {
+                    "description": "The id of the tenant to which the service is registered to.",
+                    "type": "string"
+                },
+                "type": {
+                    "description": "The service type for the services onboarded to Azure Active Directory Connect Health. Depending on whether the service is monitoring, ADFS, Sync or ADDS roles, the service type can either be AdFederationService or AadSyncService or AdDomainService.",
+                    "type": "string"
+                }
+            },
+            "type": "object"
+        },
+        "api_version": {
+            "required": true,
+            "type": "string"
+        }
+    }
+}

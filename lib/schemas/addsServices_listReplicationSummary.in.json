@@ -1,0 +1,43 @@
+{
+    "type": "object",
+    "properties": {
+        "serviceName": {
+            "required": true,
+            "type": "string"
+        },
+        "isGroupbySite": {
+            "required": true,
+            "type": "boolean"
+        },
+        "query": {
+            "required": true,
+            "type": "string"
+        },
+        "nextPartitionKey": {
+            "required": true,
+            "type": "string",
+            "enum": [
+                " "
+            ]
+        },
+        "nextRowKey": {
+            "required": true,
+            "type": "string",
+            "enum": [
+                " "
+            ]
+        },
+        "takeCount": {
+            "required": false,
+            "type": "integer"
+        },
+        "_filter": {
+            "required": false,
+            "type": "string"
+        },
+        "api_version": {
+            "required": true,
+            "type": "string"
+        }
+    }
+}

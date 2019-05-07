@@ -1,0 +1,25 @@
+{
+    "type": "object",
+    "properties": {
+        "serviceName": {
+            "required": true,
+            "type": "string"
+        },
+        "dimensionType": {
+            "required": false,
+            "type": "string"
+        },
+        "dimensionSignature": {
+            "required": false,
+            "type": "string"
+        },
+        "_filter": {
+            "required": false,
+            "type": "string"
+        },
+        "api_version": {
+            "required": true,
+            "type": "string"
+        }
+    }
+}

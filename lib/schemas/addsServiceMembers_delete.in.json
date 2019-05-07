@@ -1,0 +1,22 @@
+{
+    "type": "object",
+    "properties": {
+        "serviceName": {
+            "required": true,
+            "type": "string"
+        },
+        "serviceMemberId": {
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+        },
+        "confirm": {
+            "required": false,
+            "type": "boolean"
+        },
+        "api_version": {
+            "required": true,
+            "type": "string"
+        }
+    }
+}
